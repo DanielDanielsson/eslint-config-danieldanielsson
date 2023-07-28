@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-danieldanielsson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The eslint of truth and justice by Daniel Danielsson",
   "main": "index.js",
   "scripts": {
