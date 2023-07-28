@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    "airbnb",
+    "airbnb-typescript",
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:react/recommended",
