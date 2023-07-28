@@ -7,8 +7,27 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Danielsson",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/DanielDanielsson/eslint-config-danieldanielsson#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielDanielsson/eslint-config-danieldanielsson"
+  },
+  "keywords": [
+    "eslintconfig",
+    "eslint",
+    "config",
+    "typescript",
+    "react"
+  ],
   "dependencies": {
     "eslint-config-airbnb-typescript": "^17.1.0"
-  }
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "prettier": "3.x"
+  },
+  "eslintIgnore": [
+    "node_modules"
+  ]
 }
