@@ -126,5 +126,5 @@ module.exports = {
     '@typescript-eslint/comma-dangle': ['off'],
     'react/jsx-props-no-spreading': 'off',
   },
-  plugins: ['html', 'prettier', 'react-hooks'],
+  plugins: ['prettier', 'react-hooks'],
 };
