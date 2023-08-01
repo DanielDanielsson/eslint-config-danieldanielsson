@@ -3,11 +3,12 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
   extends: ['airbnb', 'prettier'],
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    requireConfigFile: false,
-    babelOptions: {
-      presets: ['@babel/preset-react'],
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
     },
   },
   env: {
@@ -18,7 +19,6 @@ module.exports = {
   },
   rules: {
     'no-debugger': 0,
-    'no-use-before-define': 'off',
     'import/no-cycle': 'off',
     'no-alert': 0,
     'no-await-in-loop': 0,
@@ -60,7 +60,6 @@ module.exports = {
         props: false,
       },
     ],
-    'no-console': 0,
     'import/prefer-default-export': 0,
     import: 0,
     'func-names': 0,
@@ -77,7 +76,6 @@ module.exports = {
     'react/forbid-prop-types': 0,
     'react/no-unescaped-entities': 0,
     'react/function-component-definition': 0,
-    'jsx-a11y/accessible-emoji': 0,
     'jsx-a11y/label-has-associated-control': [
       'error',
       {
@@ -112,13 +110,7 @@ module.exports = {
       {
         singleQuote: true,
         endOfLine: 'auto',
-      },
-    ],
-    'jsx-a11y/href-no-hash': 'off',
-    'jsx-a11y/anchor-is-valid': [
-      'warn',
-      {
-        aspects: ['invalidHref'],
+        tabWidth: 2,
       },
     ],
     'react-hooks/rules-of-hooks': 'error',
