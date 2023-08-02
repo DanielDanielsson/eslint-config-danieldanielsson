@@ -3,6 +3,7 @@
 
 
 # The eslint of truth and justice. 
+This is how I configure eslint and prettier in my projects! It works as a good base for anyones eslint and prettier, since any rule is configurable to personal prefrences. (See #Customization)
 
 ## Installation
 
@@ -42,7 +43,7 @@ TypeScript users will also need a `tsconfig.json` file in their project. An empt
 },
 ```
 
-5. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`.
+Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`. We'll look into how this can be automated on save in VSCode in just a bit, but since everyone working on your project might not have this configured it's great to have these scripts! 
 
 ## Customization
 
