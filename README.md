@@ -14,7 +14,7 @@
 npm i @danieldanielsson/eslint-config
 ```
 
-4. We need to put our eslint settings in a file in the root of your project. Create a `.eslintrc` or `.eslintrc.js` file for that:
+3. We need to put our eslint settings in a file in the root of your project. Create a `.eslintrc` or `.eslintrc.js` file for that:
 
 For javscript projects, use `@danieldanielsson/eslint-config`.
 ```json
@@ -33,7 +33,7 @@ For TypeScript projects, use `@danieldanielsson/eslint-config/typescript`.
 
 TypeScript users will also need a `tsconfig.json` file in their project. An empty object (`{}`) will do! 
 
-5. And let's add two scripts to our package.json to lint and fix lint errors:
+4. And let's add two scripts to our package.json to lint and fix lint errors:
 
 ```json
 "scripts": {
@@ -42,7 +42,7 @@ TypeScript users will also need a `tsconfig.json` file in their project. An empt
 },
 ```
 
-6. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`.
+5. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`.
 
 ## Customization
 
@@ -71,14 +71,26 @@ If you want custom [prettier options](https://prettier.io/docs/en/options.html),
 }
 ```
 
-## With VS Code
+## VSCode
 
-Once you have done the above installs, I recomend you to configure VSCode to lint and fix for you. Here are the instructions for VS Code:
+Once you have done the above installs, I recommend you to configure VSCode to lint and fix for you. Here's hpw I do it:
 
 1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 2. Now we need to setup some VSCode settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the Open (Open Settings) icon in the top right corner:
 
-```js
+```json
+
+ "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.format.enable": true,
+  "eslint.workingDirectories": [],
+  "eslint.runtime": "",
+  "eslint.debug": true,
+
 // These are all my auto-save configs
 "editor.formatOnSave": true,
 // turn it off for JS and JSX, we will do this via eslint
