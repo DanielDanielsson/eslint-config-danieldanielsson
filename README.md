@@ -33,13 +33,6 @@ For TypeScript projects, use `@danieldanielsson/eslint-config/typescript`.
 
 TypeScript users will also need a `tsconfig.json` file in their project. An empty object (`{}`) will do! 
 
-
-```json
-{
-  "extends": ["@danieldanielsson/eslint-config/typescript"]
-}
-```
-
 5. And let's add two scripts to our package.json to lint and fix lint errors:
 
 ```json
@@ -80,10 +73,10 @@ If you want custom [prettier options](https://prettier.io/docs/en/options.html),
 
 ## With VS Code
 
-Once you have done one, or both, of the above installs. You probably want your editor to lint and fix for you. Here are the instructions for VS Code:
+Once you have done the above installs, I recomend you to configure VSCode to lint and fix for you. Here are the instructions for VS Code:
 
 1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-2. Now we need to setup some VS Code settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the Open (Open Settings) icon in the top right corner:
+2. Now we need to setup some VSCode settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the Open (Open Settings) icon in the top right corner:
 
 ```js
 // These are all my auto-save configs
@@ -100,5 +93,5 @@ Once you have done one, or both, of the above installs. You probably want your e
 
 After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window.
 
-Finally you'll usually need to restart VS code.
+Finally you'll usually need to restart VSCode.
 
