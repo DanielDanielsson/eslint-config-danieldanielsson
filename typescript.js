@@ -12,17 +12,17 @@ module.exports = {
   ],
   // then add some extra good stuff for Typescript
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   plugins: ['@typescript-eslint'],
   // Then we add our own custom typescript rules
   rules: {
-    '@typescript-eslint/no-explicit-any': 'warn',
-    '@typescript-eslint/no-floating-promises': 'off',
-    '@typescript-eslint/no-use-before-define': 'off',
+    'react/require-default-props': 0,
+    'import/prefer-default-export': 'off',
+
     // This is covered by the typescript compiler, so we don't need these rules
     'no-undef': 'off',
     'no-shadow': 'off',
-  },
-  parserOptions: {
-    project: './tsconfig.json',
   },
 };

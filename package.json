@@ -1,6 +1,6 @@
 {
   "name": "@danieldanielsson/eslint-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "The eslint of truth and justice by Daniel Danielsson",
   "main": "index.js",
   "author": {
@@ -22,9 +22,6 @@
     "react"
   ],
   "dependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/preset-react": "^7.22.5",
-    "@rushstack/eslint-patch": "^1.3.2",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint-config-airbnb": "^19.0.4",
