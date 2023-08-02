@@ -16,7 +16,7 @@ npm i @danieldanielsson/eslint-config
 
 3. We need to put our eslint settings in a file in the root of your project. Create a `.eslintrc` or `.eslintrc.js` file for that:
 
-For javscript projects, use `@danieldanielsson/eslint-config`.
+For javscript projects, use `@danieldanielsson/eslint-config`. (Please don't use javascript 🙏)
 ```json
 {
   "extends": ["@danieldanielsson/eslint-config"]
