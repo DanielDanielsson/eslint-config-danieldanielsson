@@ -69,7 +69,7 @@ If you want custom [prettier options](https://prettier.io/docs/en/options.html),
 {
   "singleQuote": true,
   "endOfLine": "auto",
-  "tabWidth": 4
+  "tabWidth": 2
 }
 ```
 
