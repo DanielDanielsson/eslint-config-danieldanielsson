@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/@danieldanielsson%2Feslint-config.svg)](https://badge.fury.io/js/@danieldanielsson%2Feslint-config)
 
 
-# The eslint of truth and justice. 
+# THE ESLINT OF TRUTH AND JUSTICE™
 This is how I configure eslint and prettier in my projects! It works as a good base for anyones eslint and prettier, since any rule is configurable to personal prefrences. (See [Customization](#customization))
 
 ## Installation
