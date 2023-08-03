@@ -37,6 +37,7 @@ module.exports = {
     ],
     'import/extensions': 0,
     "import/no-default-export": 2,
+    'import/no-unresolved': 'off',
     "react/function-component-definition": [
       "error",
       {
