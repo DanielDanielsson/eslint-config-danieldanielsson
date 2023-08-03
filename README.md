@@ -95,7 +95,7 @@ Once you have done the above installs, I recommend you to configure VSCode to li
 
 // These are all my auto-save configs
 "editor.formatOnSave": true,
-// turn it off for JS and JSX, we will do this via eslint
+// turn it off for JS, JSX, TS and TSX , we will do this via eslint instead.
 "[javascript][javascriptreact][typescript][typescriptreact]": {
   "editor.formatOnSave": false
 },
