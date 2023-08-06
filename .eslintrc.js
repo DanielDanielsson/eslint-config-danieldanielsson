@@ -27,6 +27,7 @@ module.exports = {
         singleQuote: true,
         endOfLine: 'auto',
         tabWidth: 2,
+        quoteProps: "consistent"
       },
     ],
     'react/jsx-filename-extension': [
