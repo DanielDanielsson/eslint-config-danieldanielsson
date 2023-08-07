@@ -3,7 +3,7 @@
 
 
 # THE ESLINT OF TRUTH AND JUSTICE™
-This is how I configure eslint and prettier in my projects! It works as a good base for anyones eslint and prettier, since any rule is configurable to personal prefrences. (See [Customization](#customization))
+This is how I configure eslint and prettier in my projects! It works as a good base for anyones eslint and prettier, since any rule is configurable to personal prefrences (See [Customization](#customization)).
 
 ## Installation
 
