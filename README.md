@@ -1,8 +1,8 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/danieldanielsson/dotfiles)](https://github.com/DanielDanielsson/eslint-config-danieldanielsson)
 [![npm version](https://badge.fury.io/js/@danieldanielsson%2Feslint-config.svg)](https://badge.fury.io/js/@danieldanielsson%2Feslint-config)
 
+# Eslint config - Daniel Danielsson
 
-# THE ESLINT OF TRUTH AND JUSTICE™
 This is how I configure eslint and prettier in my projects! It works as a good base for anyones eslint and prettier, since any rule is configurable to personal prefrences (See [Customization](#customization)).
 
 ## Installation
@@ -18,6 +18,7 @@ npm i @danieldanielsson/eslint-config
 3. We need to put our eslint settings in a file in the root of your project. Create a `.eslintrc` or `.eslintrc.js` file for that:
 
 For javscript projects, use `@danieldanielsson/eslint-config`. (I recommend using typescript)
+
 ```json
 {
   "extends": ["@danieldanielsson/eslint-config"]
@@ -32,7 +33,7 @@ For TypeScript projects, use `@danieldanielsson/eslint-config/typescript`.
 }
 ```
 
-TypeScript users will also need a `tsconfig.json` file in their project. An empty object (`{}`) will do! 
+TypeScript users will also need a `tsconfig.json` file in their project. An empty object (`{}`) will do!
 
 4. And let's add two scripts to our package.json to lint and fix lint errors:
 
@@ -43,9 +44,10 @@ TypeScript users will also need a `tsconfig.json` file in their project. An empt
 },
 ```
 
-Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`. We'll look into how this can be automated on save in VSCode in just a bit, but since everyone working on your project might not have this configured it's great to have these scripts! 
+Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`. We'll look into how this can be automated on save in VSCode in just a bit, but since everyone working on your project might not have this configured it's great to have these scripts!
 
 <a name="customization"></a>
+
 ## Customization
 
 If you'd like to overwrite eslint or prettier settings, you can add the rules in your `.eslintrc` file. The [ESLint rules](https://eslint.org/docs/rules/) go directly under `"rules"`.
@@ -108,4 +110,3 @@ Once you have done the above installs, I recommend you to configure VSCode to li
 After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window.
 
 Finally you'll usually need to restart VSCode.
-

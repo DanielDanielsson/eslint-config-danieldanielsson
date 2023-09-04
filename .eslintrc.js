@@ -1,12 +1,7 @@
 module.exports = {
   extends: ['airbnb', 'prettier'],
   parser: '@typescript-eslint/parser',
-  ignorePatterns: [
-    '.eslintrc.js',
-    'postcss.config.js',
-    'next.config.js',
-    'tailwind.config.js',
-  ],
+  ignorePatterns: ['.eslintrc.js'],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
@@ -20,6 +15,7 @@ module.exports = {
     jquery: true,
     jest: true,
   },
+  plugins: ['prettier'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -27,7 +23,7 @@ module.exports = {
         singleQuote: true,
         endOfLine: 'auto',
         tabWidth: 2,
-        quoteProps: "consistent"
+        quoteProps: 'consistent',
       },
     ],
     'react/jsx-filename-extension': [
@@ -37,15 +33,14 @@ module.exports = {
       },
     ],
     'import/extensions': 0,
-    "import/no-default-export": 2,
+    'import/no-default-export': 2,
     'import/no-unresolved': 'off',
-    "react/function-component-definition": [
-      "error",
+    'react/function-component-definition': [
+      'error',
       {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
     ],
   },
-  plugins: ['prettier'],
 };
