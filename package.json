@@ -1,6 +1,6 @@
 {
   "name": "@danieldanielsson/eslint-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The eslint of truth and justice by Daniel Danielsson",
   "main": "index.js",
   "author": {
@@ -36,9 +36,9 @@
     "eslint-plugin-typescript-sort": "^0.1.6"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0",
+    "eslint": "^7 || ^8",
     "prettier": "^3.0.0",
-    "typescript": "^5.0.4"
+    "typescript": "^3 || ^4 || ^5"
   },
   "eslintIgnore": [
     "node_modules"
