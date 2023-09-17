@@ -7,15 +7,13 @@ This is how I configure eslint and prettier in my projects! It works as a good b
 
 ## Installation
 
-1. If you don't already have a `package.json` file, create one with `npm init -y`.
-
-2. Then we need to install this config
+1. First, install the package and make sure it's added to your `package.json` file in the devDependencies.
 
 ```
-npm i @danieldanielsson/eslint-config
+npm i -D @danieldanielsson/eslint-config
 ```
 
-3. We need to put our eslint settings in a file in the root of your project. Create a `.eslintrc` or `.eslintrc.js` file for that:
+2. We need to put our eslint settings in a file in the root of your project. Create a `.eslintrc` or `.eslintrc.js` file for that:
 
 For javscript projects, use `@danieldanielsson/eslint-config`. (I recommend using typescript)
 
@@ -35,7 +33,7 @@ For TypeScript projects, use `@danieldanielsson/eslint-config/typescript`.
 
 TypeScript users will also need a `tsconfig.json` file in their project. An empty object (`{}`) will do!
 
-4. And let's add two scripts to our package.json to lint and fix lint errors:
+3. And let's add two scripts to our package.json to lint and fix lint errors:
 
 ```json
 "scripts": {
