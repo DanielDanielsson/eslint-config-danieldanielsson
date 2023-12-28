@@ -20,9 +20,9 @@ module.exports = {
     'react/require-default-props': 0,
     'import/prefer-default-export': 'off',
     'no-undef': 'off',
-    'typescript-sort/sort-interface': 'error',
-    'typescript-sort/sort-type': 'error',
-    'typescript-sort/sort-enum': 'error',
-    'typescript-sort/sort-arrowfunc-object-params': 'error',
+    'typescript-sort/interface': 'error',
+    'typescript-sort/type': 'error',
+    'typescript-sort/enum': 'error',
+    'typescript-sort/arrowfunc-object-params': 'error',
   },
 };
