@@ -15,19 +15,9 @@ npm i -D @danieldanielsson/eslint-config
 
 2. We need to put our eslint settings in a file in the root of your project. Create a `.eslintrc` or `.eslintrc.js` file for that:
 
-For javscript projects, use `@danieldanielsson/eslint-config`. (I recommend using typescript)
-
 ```json
 {
   "extends": ["@danieldanielsson/eslint-config"]
-}
-```
-
-For TypeScript projects, use `@danieldanielsson/eslint-config/typescript`.
-
-```json
-{
-  "extends": ["@danieldanielsson/eslint-config/typescript"]
 }
 ```
 
@@ -53,7 +43,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "@danieldanielsson/eslint-config/typescript"
+    "@danieldanielsson/eslint-config"
   ],
   "rules": {
     "no-console": 2,

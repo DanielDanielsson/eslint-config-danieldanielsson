@@ -1,6 +1,6 @@
 {
   "name": "@danieldanielsson/eslint-config",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "main": "index.js",
   "author": {
     "name": "Daniel Danielsson",
@@ -32,6 +32,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-typescript-sort": "^0.1.11"
   },
   "peerDependencies": {
